@@ -26,14 +26,17 @@ Shared Memory Sort: Run your shared memory sort from HW5 on the small.instance a
 above on the different datasets.
 #
 Linux Sort: Run the Linux Sort on the small.instance and large.instance defined above on the different datasets.
+#
 Hadoop Sort: Implement the HadoopSort application (you must use Java). You must specify the number of
 reducers to ensure you use all the resources of the 4-node cluster. You must read the data from HDFS, sort it,
 and then store the sorted data in HDFS and validate it with valsort. Measure the time from reading from HDFS,
 sorting, and writing to HDFS; do not include the time to run valsort.
+#
 Spark Sort: Implement the SparkSort application (you must use Java). Make sure to use RDD to speed up the
 sort through in-memory computing. You must read the data from HDFS, make use of RDD, sort, and write the
 sorted data back to HDFS, and finally validate the sorted data with valsort. Measure the time from reading from
 HDFS, sorting, and writing to HDFS; do not include the time to run valsort.
+#
 Performance: Compare the performance of your shared-memory external sort, the Linux “sort” (more
 information at http://man7.org/linux/man-pages/man1/sort.1.html), Hadoop Sort, and Spark Sort on a 4-node
 cluster with the 1GB, 4GB, 16GB, and 64GB datasets. Fill in the table below, and then derive new tables or figures
